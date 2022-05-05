@@ -1,6 +1,6 @@
 const TelegramBot = require('node-telegram-bot-api')
 require('dotenv').config()
-const bot = new TelegramBot(process.env.token, {polling: true})
+const bot = new TelegramBot(process.env.BOT_TOKEN_1, {polling: true})
 const {connectDb, connectModel}=require('./db')
 let duState=0
 let seState=0
